@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+dist/
+build/
+
+# Environment
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDEs
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project Specific
+backend/ml/model_weights.json # Only if you consider this an artifact not to be versioned, but usually models SHOULD be versioned if small. I'll leave it out of ignore for now or keep it? User wants to deploy.
+# Actually, model_weights.json is small enough and crucial for the app to run without retraining. I will keep it IN the repo.
